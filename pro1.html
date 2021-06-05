@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY first website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0px;
+            border: 0px;
+            background: url(./pii.jpg);
+            background-repeat: no-repeat;
+            height: auto;
+            width:100%;
+            background-size: cover;
+            
+        }
+        .left{
+            display : inline block;
+            width: 7%;
+            height: 9rem;
+            position: absolute;
+            top: 77pxpx;
+            left: 33px;
+            border-radius: 12px;
+            
+        
+
+
+        }
+        .left img{
+            width: 7rem;
+            height:7rem;
+            color: aliceblue;
+            text-align: center;
+              filter : invert(100%) 
+
+        }
+        .mid{
+            border: 9px solid rgb(185, 185, 196);
+            display: block;
+            margin: auto;
+            width: 55%;
+            height:6rem;
+            border-radius: 6px;
+            bottom: 45;
+            margin: 53px auto;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+
+        }
+        .right{
+            border: 5px solid rgb(93, 100, 93);
+            position: absolute;
+            right: 34px;
+            top: 22px;
+            display:  inline block;
+        
+
+
+
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            color: white;
+            display: inline-block;
+            font-size: 23px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 17px;
+        }
+        .navbar li a:hover , .navbar li a.active{
+            text-decoration: underline;
+            color: blanchedalmond;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .fat{
+            text-align: center;
+            color: white;
+            font-family: 'Playball', cursive;
+            font-size: 36px;
+        }
+        .btn{
+            margin: 4px solid grey;
+            padding: 7px;
+            text-decoration: underline;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Playball', cursive;
+
+        }
+        .btn:hover{
+            background-color: aquamarine;
+            color:  blanchedalmond;
+        
+        }
+        .fatty{
+            border: 6px solid grey;
+            background-color: rgb(101, 149, 177);
+            margin: 12px auto;
+            padding: 9px;
+            top: 180px;
+            width: 25rem;
+            bottom: 78px;
+            border-radius: 23px;
+            height: 34rem;
+            
+            
+        }
+        .form-group input{
+            text-align: center;
+             font-family: 'Playball', cursive;
+             width: auto;
+             padding: 6px;
+             border: 3px;
+             margin: 5px;
+        }
+        .fatty h1{
+            text-align: center;
+        }
+        .form-group button{
+            text-align: centre;
+        }
+    
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="./piiii.jpg"alt="" class="src">
+            <div class="fat">Perfection</div>
+
+            </div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class = "active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Fitness calculator</a></li>
+                <li><a href="#"> Diet planner</a></li>
+                <li><a href="#">Ping us on:</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email us </button>
+
+        </div>
+    </header>
+    <div class="fatty">
+        <h1>ENROLL IN THE BEST  ONLINE WORKOUT CLASSES NOW!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <div>Name: <input type="text " placeholder="Enter your name:"></div>
+                <br>
+                <div>
+                    Email: <input type="email" name="my email" placeholder="Enter your email">
+
+                </div>
+                <br>
+                <div>
+                    Number: <input type="text " placeholder="Enter you personal number">
+
+                </div>
+                <br>
+                <div>
+                    Gender: male<input type="radio" value="my name"> female <input type="radio" value="my name">
+                </div>
+                <br>
+                <div>
+                    Are u elligible(if age>=12) : <input type="checkbox" value="Elligible">
+                </div>
+                <br>
+                <div>
+                    <label for="prize"></label>
+                    <select name="fitness" id="prize"></select>
+                    <option value="1200">age group below 18:1200</option>
+                    <option value="1800">age group above 18:1500</option>
+
+                </div>
+
+                <div><button class="btn">Submit Now</button></div>
+
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>

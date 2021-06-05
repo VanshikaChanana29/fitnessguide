@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+ }
+ img{
+     background-size: cover;
+     width: 100%;
+     height: auto;}
+.left{
+    border: 5px;
+    height: 23px;
+
+
+}
+.right{
+    border: 5px;
+    height: 23px;
+
+
+}
+.centre{
+    border: 5px;
+    height: 23px;
+}
